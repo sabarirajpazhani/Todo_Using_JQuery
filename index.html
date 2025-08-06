@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management (To-Do) Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- base , redmond, dark-hive, smoothness, humanity, ui-lightness, start, blitzer -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  </head>
+  <body> 
+    <section class="container">
+      <h1 class="heading">Task Management System (Todo)</h1>
+      <div class="header">
+        <button id="add_task">Add Tasks</button>
+        <div class="filter"> 
+          <label for="filter">Filter</label>
+          <select name="filterPriority" id="filter">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <input type="text" id="searching" placeholder="searching todo...">
+      </div>
+      <!-- <input type="text" id="searching">  -->
+
+      <form id="task_input" title="Add Task Details">
+        <div>
+          <label for="userTitle">Enter the Title: </label><br />
+          <input type="text" id="userTitle" required /><br />
+        </div>
+
+        <div>
+          <label for="userDesc">Enter the Description</label><br />
+          <textarea id="userDesc" cols="22px" rows="5px" required></textarea
+          ><br />
+        </div>
+
+        <div>
+          <label for="userPriority">Enter the Priority</label><br />
+          <input id="Priority" type="number" min="1" max="5" required /><br />
+        </div>
+
+        <label
+          >Enter is this complete :
+          <input type="radio" name="isDone" value="YES" /> YES
+          <input type="radio" name="isDone" value="NO" /> NO
+        </label> <br>
+      </form>
+
+      <div id="error-dialog">
+        <h3 id="errpr-message"></h3>
+      </div>
+
+      <div id="delete-dialog">
+        <h3 id="delete-message"></h3>
+      </div>
+
+      <div id="result"></div>
+    </section>
+  </body>
+</html>
+
+
+
+<!-- I try to fix the searching option but i am not have time to fix this  -->
