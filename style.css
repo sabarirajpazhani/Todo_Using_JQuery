@@ -1,0 +1,79 @@
+#task_input{
+    display: none;
+}
+#task_input label{
+    font-weight: bold;
+}
+#add_task{
+    margin-bottom: 30px;
+}
+
+
+.heading{
+    text-align: center;
+}
+.mainDiv{
+    background-color: rgb(204, 204, 204);
+    border: 2px solid black;
+    border-radius:10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.container{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.edit, .del{
+    background-color: rgb(101, 101, 101);
+    color: white;
+    padding: 6px;
+    width: 70px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.edit:hover, .del:hover{
+    background-color: rgb(193, 191, 191);
+    color: black;
+}
+
+.edit{
+    margin-right: 20px;
+}
+#searching{
+    margin-bottom: 50px;
+    width: 300px;
+    height: 30px;
+}
+.emptyMsg{
+    text-align: center;
+    color: red;
+}
+
+#userDesc{
+    resize:none 
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ #searching{
+     margin-top: 20px;
+     border: 1px solid black;
+     border-radius: 6px;
+ }
+
+ .title{
+    text-transform: uppercase;
+ }
+
+ #filter{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 25px;
+ }
